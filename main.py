@@ -18,7 +18,7 @@ def index():
 
 @app.route("/latest")
 def get_latest():
-    return jsonify({"message": last_message})
+    return f'return {{message="{last_message}"}}'
 
 intents = discord.Intents.default()
 intents.message_content = True
