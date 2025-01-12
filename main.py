@@ -18,7 +18,10 @@ def index():
 
 @app.route("/latest")
 def get_latest():
-    return f'return {{message="{last_message}"}}'
+    # ВАЖНО: возвращаем строку именно вида {message="Йоу228"}
+    # без "return" в начале и без JSON-формата.
+    return f'{{message="{last_message}"}}'
+
 
 intents = discord.Intents.default()
 intents.message_content = True
