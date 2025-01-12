@@ -33,7 +33,7 @@ async def on_ready():
 async def val(ctx, *, text: str = None):
     global last_message
     if not text:
-        await ctx.send("Пожалуйста, введите текст после !val")
+        await ctx.send("Пожалуйста, введите текст после !")
         return
     last_message = text
     await ctx.send(f"Сохранил для Minecraft: {text}")
