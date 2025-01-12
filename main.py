@@ -30,7 +30,7 @@ async def on_ready():
     print(f"Logged in as {bot.user} (ID: {bot.user.id})")
 
 @bot.command()
-async def v(ctx, *, text: str = None):
+async def  (ctx, *, text: str = None):
     global last_message
     if not text:
         await ctx.send("Пожалуйста, введите текст после !v")
