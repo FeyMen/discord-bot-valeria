@@ -18,8 +18,6 @@ def index():
 
 @app.route("/latest")
 def get_latest():
-    # ВАЖНО: возвращаем строку именно вида {message="Йоу228"}
-    # без "return" в начале и без JSON-формата.
     return f'{{message="{last_message}"}}'
 
 
