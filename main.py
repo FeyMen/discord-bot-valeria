@@ -30,10 +30,10 @@ async def on_ready():
     print(f"Logged in as {bot.user} (ID: {bot.user.id})")
 
 @bot.command()
-async def val(ctx, *, text: str = None):
+async def v(ctx, *, text: str = None):
     global last_message
     if not text:
-        await ctx.send("Пожалуйста, введите текст после !val")
+        await ctx.send("Пожалуйста, введите текст после !v")
         return
     last_message = text
     await ctx.send(f"Сохранил для Minecraft: {text}")
